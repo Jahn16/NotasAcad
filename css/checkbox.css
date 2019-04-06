@@ -1,0 +1,96 @@
+.check + .lbcheck {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+
+}
+
+.check {
+  display: none;
+
+}
+:after , :before {
+  box-sizing: initial;
+}
+.check + .lbcheck:before {
+  content: "\2713";
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.5em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+  input[type=checkbox] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+.check {
+  display: none;
+}
+
+.check + .lbcheck:before {
+  content: "\2714";
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+
+}
+
+.check + .lbcheck:active:before {
+  transform: scale(0);
+}
+
+.check:checked + .lbcheck:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+
+.check:disabled + .lbcheck:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+.check:checked:disabled + .lbcheck:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
+}
+.check + .lbcheck:active:before {
+  transform: scale(0);
+}
+
+.check:checked +.lbcheck:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+
+.check:disabled + .lbcheck:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+.check:checked:disabled + .lbcheck:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title></title>
+
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link href="css/menucss/dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tabela.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="listra">
+          <div id="area-titulo">
+              <h1 id="titulo">
+                  <a href="tabela.html" class="aheader">NotasAcad</a>
+              </h1>
+          </div>
+
+          <nav>
+              <ul>
+
+                  <li><a href="#" class="aheader" >Portfólio</a></li>
+                  <li><a href="#" class="aheader">Serviços</a></li>
+                  <li><a href="#" class="aheader">Sobre</a></li>
+                  <li><a href="#" id="config-botao" class="aheader">C⚙nfigurações</a></li>
+              </ul>
+          </nav>
+      </div>
+
+
+
+  </header>
+    <main>
+
+      <div class="menu">
+      <button class="hamburger hamburger--collapse" type="button">
+        <span class="hamburger-box">
+        <span class="hamburger-inner hamburger--spring"></span>
+      </span>
+      </button>
+
+      <div class="menu-deslizante fechado">
+
+          <a id="materias-notas">Matérias</a>
+          <a id="provas">Adicionar notas</a>
+          <a id="atividades">Atividades</a>
+          <a id="horarios">Horários</a>
+          <a id="grafico">Gráfico</a>
+
+      </div>
+
+    </div>
+    <div id="outras-coisas"><button id="materias" class="btn btn-primary">Adicionar Matérias</button><select name="ordenar-notas" id="ordnt"><option>Ordernar por:</option><option value="0">Alfabética</option><option value="1">Menor nota</option><option value="3">Menor média</option><option value="2">Maior nota</option><option value="4">Maior média</option></select></div>
+    <div class="clock-builder-output"></div>
+    <div id="tabela"></div>
+      <h5 id="status"></h5>
+
+
+    <div class="modal fade" id="acoes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-titulo"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-texto">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary" id="enviar">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal-erro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Erro</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="texto-erro">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modalfechar">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+
+      <div class="modal-header">
+        <h4 class="modal-title" >Erro</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+
+      <div class="modal-body" id='texto-modal-fechar'>
+
+      </div>
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal" id="fechar">Fechar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal" tabindex="-1" role="dialog" id="configuracoes">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Configurações</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="config-texto">
+
+      </div>
+      <div class="modal-footer">
+        <p id="aviso"></p>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
+  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/tabela.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+  </script>
+</html>

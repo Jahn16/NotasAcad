@@ -1,0 +1,169 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: white;
+}
+header {
+  background-image: url("../imgs/background.png");
+
+  background-size: contain;
+  overflow: hidden;
+
+}
+
+.listra {
+  width:90%;
+  margin: 0 auto;
+}
+
+#area-titulo {
+  display:block;
+  line-height: 108px;
+  height: 108px;
+  width: 30%;
+  float: left;
+}
+.listra nav {
+  line-height: 108px;
+  height: 108px;
+  float: right;
+  width: 65%;
+}
+
+.listra nav li{
+  display: inline;
+}
+
+.listra nav ul {
+  text-transform: uppercase;
+  text-align:justify;
+}
+.listra nav ul:after {
+  content:'';
+  display:inline-block;
+  width: 100%;
+  height: 0;
+}
+
+nav a {
+  padding: 1em 0;
+  color:white;
+  font-family: 'Acme', sans-serif;
+}
+nav a:hover {
+  color:white;
+}
+a {
+  text-decoration: none;
+}
+#titulo a{
+  color:white;
+  font-family: 'Chewy', cursive;
+  font-size: 40px;
+}
+
+.menu-deslizante a {
+  display: block;
+
+  color: white;
+  font-family: 'Acme', sans-serif;
+  font-size: 20px;
+  padding-left: 2%;
+  padding-bottom: 0.7%;
+  padding-top: 0.7%;
+  margin: auto;
+}
+.menu-deslizante a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  background-color: #131313;
+
+}
+.menu {
+  background-color: #f4f4f4;
+  margin-bottom: 2%;
+  border: solid black 1px;
+}
+
+
+.fechado {
+  display: none;
+}
+#acoes select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#acoes input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#outras-coisas select {
+  font-size: 20px;
+      margin-right: 4%;
+      margin-bottom: 3%;
+}
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5%;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+table tr:nth-child(odd){background-color: white;}
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+#outras-coisas button {
+  font-size: 20px;
+  margin-right: 2%;
+  margin-bottom: 3%;
+}
+#outras-coisas {
+  display: flex;
+    justify-content: center;
+
+}
+.vermelho {
+  color:red;
+}
+#aviso {
+  text-align: left;
+}
+#status {
+  display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 3.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+#status strong {
+  margin-right: 0.3%;
+}
